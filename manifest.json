@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2 ,
+    "name":"coolBackground",
+    "description": "Add a custom background to Google.com",
+    "version":"1.0",
+    "icons" :{
+        "16":"/images/icons8-sun-16.png",
+        "48":"/images/icons8-sun-48.png",
+        "128":"/images/icons8-sun-128.png"
+    },
+    "page_action":{
+        "default_icon":{
+            "16": "/images/icons8-gunter-16.png",
+            "48": "/images/icons8-gunter-48.png",
+            "128":"/images/icons8-gunter-128.png"
+        }
+    },
+    "content_scripts": [{
+        "matches":["https://www.google.com/*"],
+        "css":["main.css"]
+    }]
+}
